@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Get_Covid_info</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            width: 43vw;
+            margin: 50px auto;
+            font-size: 50px;
+
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20vh;
+
+        }
+
+        .container {
+            width: 30vw;
+            margin: 20px auto;
+        }
+
+        .container input {
+            width: 100%;
+            text-align: center;
+            padding: 6px;
+            font-size: 20px;
+            border-radius: 10px;
+            border-width: 6px;
+            border-style: inset;
+            border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+
+        }
+
+        #submit {
+            display: block;
+            /* background-color: blue; */
+            width: 50%;
+
+            cursor: pointer;
+            border-radius: 7px;
+            text-align: center;
+            padding: 6px;
+            background-color: rgb(110, 110, 245);
+            margin: 0px auto;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Get Covid info From here</h2>
+    <p>Get more info Country vise Fill the name of Country for more details</p>
+    <div class="container">
+        <form action="GetData" method="get">
+            <input type="text" placeholder=" Enter Country Name" name="t1"><br><br>
+
+<input type="submit" value="Submit_Now" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>

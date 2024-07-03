@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+ <style>
+  *{
+    margin: 0%;
+    padding: 0%;
+  }
+ body{
+   background-color: black;
+   color: white;
+
+    }
+    .outercon{
+        background-color: aqua;
+        width: 50vw;
+        height: 70vh;
+        margin: 5vh auto;
+        border: 2px solid white;
+        box-shadow: 12px 6px 9px rgb(215 199 224);
+        border-radius: 5px;
+        position:relative;
+        top: 8vh;
+    }
+    .container{
+        width: 33vw;
+        height: 50vh;
+        margin: 10vh auto;
+
+    }
+    .input{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        color: black;
+        margin: 5px 0px;
+        padding: 5px 0px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    h2{    text-align: center;
+    font-size: 45px;
+    text-shadow: 4px 4px 2px white;
+    position: relative;
+    top: 27px;
+    color: black;
+    }
+    .btn{
+        cursor: pointer;
+        border-radius: 15px;
+        background-color: rgb(107, 107, 236);
+        margin-top: 10px;
+        text-shadow: 2px 2px 2px #4b4444;
+    }
+    .btn:hover{
+             color: rgb(73, 70, 70);
+            text-decoration: underline;
+            background-color: rgb(151, 151, 245);
+        
+    }
+    .navbar{
+           width: 100%;
+           background-color: blue;
+         border-radius: 15px;
+         display: flex;
+     justify-content: center;
+     position: relative;
+     top: 40px;
+
+    }
+    ul{
+        width: 66vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+
+    }
+    li{
+        list-style: none;
+        
+    }
+       
+    
+    a{
+        color: black;
+        text-decoration: none;
+        margin: 2px 0px;
+        padding: 4px 15px;
+        border-radius: 8px;
+        background-color:white;
+        font-weight: bold;
+       
+    }
+    li a:hover, li a.active{
+        background-color: blue ;
+        color: rgb(165, 160, 160);
+        text-decoration: underline;
+       
+    }
+ </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home_Page</a></li>
+            <li><a href="Registration.html"  class="active">Registration_page</a></li>
+            <li><a href="Admin_page.html">Admin_login</a></li>
+            <li><a href="">Any_Help</a></li>
+     
+        </ul>
+        </div>
+    <div class="outercon">
+        <h2>Registration Form</h2>
+    <div class="container">
+        <form action="Registration" method="post">
+         <input type="text" name="uid" placeholder="Enter your User-ID" class="input">
+         <input type="password" name="password" placeholder="Enter your Password" class="input">
+         <input type="password" name="confirmpassword" placeholder="Confirm your Password" class="input">
+         <input type="email" name="mail" placeholder="Enter your Gmail" class="input">
+         <input type="text"  name="name" placeholder="Enter your Name" class="input">
+         <input type="number" name="number" placeholder="Enter your Contact-no" class="input">
+         <input type="submit" value="Log-in"  class="input btn">
+         <input type="reset" value="Reset" class="input btn"> 
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

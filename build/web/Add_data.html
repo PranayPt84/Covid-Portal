@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_Data</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            margin: 12vh auto;
+            font-size: 52px;
+            background-color: rgb(113, 88, 227);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .form {
+            width: 33vw;
+            margin: 19vh auto;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        #submit {
+            width: 100%;
+            text-align: center;
+            padding: 6px;
+            background-color: rgb(107, 107, 236);
+            cursor: pointer;
+            margin: 10px 0px;
+            font-size: 20px;
+            border-radius: 12px;
+        }
+
+        #submit:hover {
+            color: rgb(73, 70, 70);
+            text-decoration: underline;
+            background-color: rgb(151, 151, 245);
+        }
+
+        .input {
+            font-size: 15px;
+            margin: 8px 0px;
+            padding: 10px 0px;
+            width: 100%;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        #formhed {
+            background-color: rgb(66, 66, 134);
+            color: white;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3>WellCome to Admin Page</h3>
+    <div class="form">
+        <form action="AddData" method="get">
+            <h3 id="formhed" class="input">Covid Country Details</h3>
+            <input type="text" name="CountryName" placeholder="Enter_Country_Name" class="input">
+            <input type="text" name="ActiveCase" placeholder="Enter_Active_Case" class="input">
+            <input type="text" name="Deths" placeholder="Enter_Total_Deths" class="input">
+            <input type="text" name="TotalCase" placeholder="Enter_Total_Case" class="input">
+            <input type="submit" value="Submit_now" id="submit">
+        </form>
+    </div>
+    
+</body>
+
+</html>
